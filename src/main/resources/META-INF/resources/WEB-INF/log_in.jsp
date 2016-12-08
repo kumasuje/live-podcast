@@ -1,3 +1,8 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ page import="java.util.List" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,38 +21,41 @@
 
 <body class="main_page" data-spy="scroll" data-target=".navbar" data-offset="500" >
 
+
 <!--start:navbar-->
-<nav id="header" class="navbar navbar-default navbar-fixed-top">
+<nav id="header" class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-       <a href="home_page.html" id="title" class="navbar-brand"  ><img id="logo" src="images/logo.png" target="_blank/" alt="Logo"/>Fresher's Hub</a>
+
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-        </button> 
-    </div>
-      
-      <div class="collapse navbar-collapse" id="myNavbar">
+            <span class="icon-bar"></span>
+        </button>
+        <a href="home_page.html" class="navbar-brand"><img id="logo" src="images/logo_title.png" target="_blank/" alt="Logo"/></a>
+  	</div>
 
-        <ul class="nav navbar-nav" id="menu_bar">
-      
+  		<div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
           <li><a href="discover.html" id="menu_bar_items">Discover&emsp;</a></li>
           <li><a href="live.html" id="menu_bar_items">Live&emsp;</a></li>
           <li><a href="profile.html" id="menu_bar_items">Profile&emsp;</a></li>
           <li><a href="about_us.html" id="menu_bar_items">About&emsp;</a></li>
           <li><a href="feedback.html" id="menu_bar_items">Feedback&emsp;</a></li>
-        </ul>
-        
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="log_in.html" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
-          <li><a href="log_in.html" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+         <li><a href="log_in.html" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+
+            "${user}"
+            <c:if test="${empty user}">
+               <li><a href="log_in.html" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+            </c:if>
+            <c:if test="${not empty user}">
+               <li><a href="/logout" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+            </c:if>
         </ul>
         </div>
     </div>
 </nav>
 <!--end:navbar-->
-  
 
 <!-- start of div:container the scrolling part -->
 <div id ="content_of_page" class="container-fluid" >
@@ -100,6 +108,11 @@
                         <input type="userid" name="userid" class="form-control" id="userid" placeholder="New User id" required="true">
                       </div>
 
+                     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-6">
+                        <label for="name">User ID</label>
+                        <input type="name" name="name" class="form-control" id="name" placeholder="Your Name" required="true">
+                      </div>
+
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <label for="password">Password</label>
                         <input type="password"	name="password" class="form-control" id="password" placeholder="Enter Your Password" required="true">
@@ -110,7 +123,12 @@
                         <input type="emailid" name="emailid" class="form-control" id="emailid" placeholder="Enter Your Email Id" required="true">
                     </div>
 
-                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    		        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <label for="file">Picture to upload:</label>
+                        <input type="file" name="file" class="form-control" id="file" required="true">
+                     </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
                      		<button type="submit" name="register" value="register" id="register" class="btn btn-primary">  Sign Up </button>
                      </div>

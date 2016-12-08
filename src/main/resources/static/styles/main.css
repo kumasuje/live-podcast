@@ -2,7 +2,7 @@
 /* CSS Document */
 @font-face {
     font-family: Bitter-Regular;
-    src: url(../fonts/Bitter-Regular.otf);   
+    src: url(../fonts/Bitter-Regular.otf);
 }
 @font-face {
     font-family: JennaSue;
@@ -14,144 +14,127 @@
 
 .main_page{
 	position: relative;
-	height: 100%;
 
-
-	background: #611955; 
-
+	/*background: #611955; */
 	font-family:Bitter-Regular;
-	font-size:20px;
-	font-weight: bold;
-	letter-spacing: 2px;
+	color: #fff;
 
-	color: #9E9E9E;
+   background:  url("../images/background1.jpg") fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
 
-	
 }
+
 
 #menu_bar_items{
 	/*works for menu bar*/
 	font-family:Bitter-Regular;
-	font-size:22px;
-	color: #000;	
-	background: transparent;
-	margin-right: 10%;
-	padding-right: 10%;
-	width: 100%;
+	color: #ffcc00;
+	background-color: #000;
+
 }
 #menu_bar_items:hover{
 	/*works for menu bar*/
 	font-family:Bitter-Regular;
-	font-size:22px;
-	color: #fff;	
-	background: transparent;
-	margin-right: 10%;
-	padding-right: 10%;
-	width: 100%;
+	color: #fff;
+	background-color: #000;
+
 }
 #menu_bar_items_log_in{
 	font-family:Bitter-Regular;
-	font-size:18px;
-	letter-spacing: 2px;
-	color: #000;	
-	background: transparent;
-	
+	color: #ffcc00;
+	background-color: #000;
+
 }
 #menu_bar_items_log_in:hover{
 	font-family:Bitter-Regular;
-	font-size:18px;
-	letter-spacing: 2px;
-	color: #fff;	
-	background: transparent;
-	
+	color: #fff;
+	background-color: #000;
+
 }
 
 #header{
-	background: #9E9E9E;
-	color: #000;
-	border-bottom: 3px solid #fff;
-	
+	background: #000;
+	border-bottom: 1px solid #000;
+	height: 10%;
+	z-index:+30;
+}
 
-}
-#title{
-	font-family:fantasy;
-	font-size: 40px;
-	
-	color: #01426A;
-	position: absolute;
-	margin-top: 2%;
-}
 
 #logo{
-	
-	width:10%;
-	margin-top: -3%;
-	float:left;
-	background: transparent;	
+	width:25%;
+	align: left;
+	position: absolute;
+	margin-top: -1%;
 }
 
-#menu_bar{
-	width: 80%;
-	padding-left: 10%;
-	margin-bottom: 1%; 
 
-}
 #myNavbar{
 	color: #000;
-	position: relative;
-	margin-top: 7%;
 }
 
 #content_of_page{
 	position: relative;
-	padding-top: 12%;
+	margin-top: 7%;
+	z-index: 0;
 
-
-
+}
+#slider{
+	/*background-color: rgba(200,0,0,0.8);*/
+	width:70%;
+	margin: auto;
+	padding: 1%;
+	z-index: +20;
 }
 
 
 #slider_images{
-	background: #510945;
-	width:80%;
-	margin: auto;
+
+
+
 }
 #slider_images_tag{
 	font-family:Bitter-Regular;
-	color:#9E9E9E;	
-	font-size:20px;
+	color:#2196F3;
 
 }
 #overview{
-	background: #510945;
-	color: #FFBBBC;
-	border: 6px ridge #01426A;
+	box-shadow:2px 2px 5px 2px #BDBDBD outset;
+	color: #fff;
+	border:none;
+	/*border: 6px  groove #500A50;*/
+	z-index: +2;
+	background: rgba(0,0,0,0.5);
 }
 #sub_heading{
-	
+
 	width: 100%;
 	border:none;
 
-	display:inline-block;	
+	display:inline-block;
 
 	font-family:Bitter-Regular;
-	font-size:22px;
-	font-weight: bold;
-	letter-spacing: 2px;
 	text-align: center;
 
 	background: transparent;
-	color: #EEEEEE;
+
 }
 #content{
 	font-family:Bitter-Regular;
-	font-size:20px;
-	font-weight: bold;
-	letter-spacing: 2px;
 	background: transparent;
 	opacity: 60%;
-	color: #9E9E9E;
+	color: #fff;
 
+}
+
+#footer_page{
+	background: #000;
+	color: #FFCA28;
+	max-height: 5%;
+	height: 5%;
+	z-index:+30;
 }
 
 
@@ -163,48 +146,45 @@
 }
 #icons{
 	text-align: right;
-	font-size:30px;
 }
 #description_heading{
-	
-	width: 100%;
-	line-height: 44px;
-	border:none;
-	
 
-	display:inline-block;	
+	width: 100%;
+	border:none;
+
+
+	display:inline-block;
 
 	font-family:Bitter-Regular;
-	font-size:40px;
 	font-weight: bold;
 	letter-spacing: 2px;
 	text-align: center;
 
 	background: transparent;
-	color: #EEEEEE;
+	color: #2196F3;
 }
 #description_content{
 	font-family:Bitter-Regular;
-	font-size:28px;
 	font-weight: bold;
 	letter-spacing: 1px;
 	background: transparent;
 	opacity: 60%;
-	color: #9E9E9E;
+	color: #fff;
 	text-align: justify;
 }
 #podcast_image{
 
 	width:60%;
 	margin-left: 20%;
-	background: transparent;	
+	background: transparent;
 	border:3px outset #fff;
 
 }
 
 /*------------------PROFILE--------------------*/
 #profile_panel{
-	background: #01426A;
+	background: rgba(33,150,243,0.3);
+
 
 }
 #profile_content{
@@ -214,81 +194,20 @@
 	letter-spacing: 1px;
 	background: transparent;
 	opacity: 60%;
-	color: #9E9E9E;
+	color:#ffcc00;
 	text-align: center;
 
 }
 #profile_image{
 	text-align: center;
 	width: 10%;
+	height:10%;
+	border: 3px solid #ffcc00;
 }
 
-
-
-
-
-/*------------------scroll bar--------------------*/
-/**
-#cake_pic{
-	border-style: solid;
-    border-width: 10px;
-	border-color:#D6A354;
-	
-	display: block;
-	width:50%;
-	margin:auto;
-	
-	
-}
-
-#pic_description{
-	
-	color: #D6A354;
-	font-family:JennaSue;
-	font-size:40px;
-	font-weight:bold;
-	letter-spacing:4px;
-	
-	border-style: solid;
-    border-width: 10px;
-	border-color:#D6A354;
-	
-	display: block;
-	width:50%;
-	margin:auto;
-	text-align:center;
-	
-	padding:10px 0px 10px 0px;
-	
-	background-color:#232123;
-	
-	font-style:italic;
-}
-
-**/
-/*------------------Nutritional Information--------------------*/
-
-/**
-.tabular_info{
-	font-family:Cambria;
-	font-size:20px;
-	
+/*------------------LOG IN--------------------*/
+#input_fields{
+	background: rgba(33,150,243,0.3);
+	color:#fff;
 
 }
-th{
-	font-weight:bold;
-	text-decoration:underline;
-	padding-left:50px;
-	padding-right:50px;
-	margin-left:20px;
-	margin-right:20px;
-}
-td{
-	padding-left:50px;
-	padding-right:50px;
-	margin-left:20px;
-	margin-right:20px;
-}
-**/
-
-

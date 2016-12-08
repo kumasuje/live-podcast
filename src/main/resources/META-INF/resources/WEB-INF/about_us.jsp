@@ -1,3 +1,8 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ page import="java.util.List" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,32 +21,36 @@
 
 <body class="main_page" data-spy="scroll" data-target=".navbar" data-offset="500" >
 
+
 <!--start:navbar-->
-<nav id="header" class="navbar navbar-default navbar-fixed-top">
+<nav id="header" class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-       <a href="home_page.html" id="title" class="navbar-brand"  ><img id="logo" src="images/logo.png" target="_blank/" alt="Logo"/>Fresher's Hub</a>
+
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-        </button> 
-    </div>
-      
-      <div class="collapse navbar-collapse" id="myNavbar">
+            <span class="icon-bar"></span>
+        </button>
+        <a href="home_page.html" class="navbar-brand"><img id="logo" src="images/logo_title.png" target="_blank/" alt="Logo"/></a>
+  	</div>
 
-        <ul class="nav navbar-nav" id="menu_bar">
-      
+  		<div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
           <li><a href="discover.html" id="menu_bar_items">Discover&emsp;</a></li>
           <li><a href="live.html" id="menu_bar_items">Live&emsp;</a></li>
           <li><a href="profile.html" id="menu_bar_items">Profile&emsp;</a></li>
           <li><a href="about_us.html" id="menu_bar_items">About&emsp;</a></li>
           <li><a href="feedback.html" id="menu_bar_items">Feedback&emsp;</a></li>
-        </ul>
-        
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="log_in.html" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
-          <li><a href="log_in.html" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+         <li><a href="log_in.html" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+
+            "${user}"
+            <c:if test="${empty user}">
+               <li><a href="log_in.html" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+            </c:if>
+            <c:if test="${not empty user}">
+               <li><a href="/logout" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+            </c:if>
         </ul>
         </div>
     </div>
