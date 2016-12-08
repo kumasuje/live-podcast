@@ -66,19 +66,19 @@
         <div class="form-group">
           <label class="control-label col-sm-2" for="name">Full Name:</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" placeholder="Enter full name">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Enter full name">
           </div>
         </div>
         <div class="form-group">
           <label class="control-label col-sm-2" for="email">Email:</label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" id="email" placeholder="Enter email address">
+            <input type="email"  name="email" class="form-control" id="email" placeholder="Enter email address">
           </div>
         </div>
         <div class="form-group">
           <label class="control-label col-sm-2" for="feedback">Feedback:</label>
           <div class="col-sm-10">
-            <textarea class="form-control" rows="5" id="feedback"></textarea>
+            <textarea class="form-control" name="feedback"  rows="5" id="feedback"></textarea>
           </div>
         </div>
         <div class="form-group">

@@ -1,5 +1,6 @@
 package edu.iu.livepodcast.RestConterller;
 
+import edu.iu.livepodcast.models.FeedBackModel;
 import edu.iu.livepodcast.models.PodcastModel;
 import edu.iu.livepodcast.models.UserModel;
 import edu.iu.livepodcast.write.service.UserService;
@@ -120,18 +121,13 @@ public class LoginController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @RequestMapping(value ="/feedback",method = RequestMethod.POST)
+    public String feedback(FeedBackModel feedBackModel, ModelMap userModelMap) {
 
-//    @PostMapping("/upload")
-//    public String handleFileUpload(@RequestParam("file") MultipartFile file,
-//                                   RedirectAttributes redirectAttributes) {
-//
-//        storageService.store(file);
-//        redirectAttributes.addFlashAttribute("message",
-//                "You successfully uploaded " + file.getOriginalFilename() + "!");
-//
-//        return "redirect:/";
-//    }
+            userService.insertFeedback(feedBackModel);
 
+        return "anotherFeedback";
+    }
 
     @RequestMapping(value = "/logout")
     public String doLogout(HttpSession session, Model model) {

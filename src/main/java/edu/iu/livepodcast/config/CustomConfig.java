@@ -19,7 +19,7 @@ public class CustomConfig extends WebMvcConfigurerAdapter{
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
-        String myExternalFilePath = "file:///Users/Manish/Pictures/new/";
+        String myExternalFilePath = "file:///app/new/";
         registry.addResourceHandler("/new/**").addResourceLocations(myExternalFilePath);
 
         super.addResourceHandlers(registry);

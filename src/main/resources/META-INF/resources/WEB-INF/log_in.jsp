@@ -109,7 +109,7 @@
                       </div>
 
                      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-6">
-                        <label for="name">User ID</label>
+                        <label for="name">Full Name</label>
                         <input type="name" name="name" class="form-control" id="name" placeholder="Your Name" required="true">
                       </div>
 
