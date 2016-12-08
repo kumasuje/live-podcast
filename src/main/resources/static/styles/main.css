@@ -12,6 +12,16 @@
 
 /*------------------General--------------------*/
 
+a{
+	color:#ffffff;
+
+}
+a:hover{
+	color: #FFB886;
+}
+.glyphicon{
+	color:#000;
+}
 .main_page{
 	position: relative;
 
@@ -19,7 +29,7 @@
 	font-family:Bitter-Regular;
 	color: #fff;
 
-   background:  url("../images/background1.jpg") fixed;
+   background:  url("../images/background3.jpg") fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -31,35 +41,38 @@
 #menu_bar_items{
 	/*works for menu bar*/
 	font-family:Bitter-Regular;
-	color: #ffcc00;
+	color: #fff;
 	background-color: #000;
 
 }
 #menu_bar_items:hover{
 	/*works for menu bar*/
 	font-family:Bitter-Regular;
-	color: #fff;
+	color: #FFB886;
 	background-color: #000;
 
 }
 #menu_bar_items_log_in{
 	font-family:Bitter-Regular;
-	color: #ffcc00;
+	/*color: #ffcc00;	*/
+	color:#fff;
 	background-color: #000;
 
 }
 #menu_bar_items_log_in:hover{
 	font-family:Bitter-Regular;
-	color: #fff;
+	color: #FFB886;
 	background-color: #000;
 
 }
 
 #header{
 	background: #000;
-	border-bottom: 1px solid #000;
 	height: 10%;
 	z-index:+30;
+	-webkit-box-shadow: 0px 5px 7px 0px rgba(51,51,51,1);
+    -moz-box-shadow: 0px 5px 7px 0px rgba(51,51,51,1);
+     box-shadow: 0px 5px 7px 0px rgba(51,51,51,1);
 }
 
 
@@ -77,10 +90,11 @@
 
 #content_of_page{
 	position: relative;
-	margin-top: 7%;
+	margin-top: 9%;
 	z-index: 0;
 
 }
+
 #slider{
 	/*background-color: rgba(200,0,0,0.8);*/
 	width:70%;
@@ -97,16 +111,26 @@
 }
 #slider_images_tag{
 	font-family:Bitter-Regular;
-	color:#2196F3;
+	color:#000;
 
 }
 #overview{
-	box-shadow:2px 2px 5px 2px #BDBDBD outset;
-	color: #fff;
+	/*box-shadow:2px 2px 5px 2px #5D4037 outset; */
+	-webkit-box-shadow: 3px 3px 15px 0px rgba(51,39,13,1);
+    -moz-box-shadow: 3px 3px 15px 0px rgba(51,39,13,1);
+     box-shadow: 3px 3px 15px 0px rgba(51,39,13,1);
+
+     background: rgba(93,64,55,0.4);
+	color: #000;
 	border:none;
-	/*border: 6px  groove #500A50;*/
+
+
+
+
 	z-index: +2;
-	background: rgba(256,256,256,0.3);
+
+
+
 }
 #sub_heading{
 
@@ -119,22 +143,26 @@
 	text-align: center;
 
 	background: transparent;
+	color:#000;
 
 }
 #content{
 	font-family:Bitter-Regular;
-	background: transparent;
-	opacity: 60%;
+	/*background: rgba(148,90,64,0.8);*/
+	background:transparent;
 	color: #fff;
 
 }
 
 #footer_page{
 	background: #000;
-	color: #FFCA28;
+	color: #fff;
 	max-height: 5%;
 	height: 5%;
 	z-index:+30;
+	-webkit-box-shadow: 5px 0px 7px 0px rgba(51,51,51,1);
+    -moz-box-shadow: 5px 0px 7px 0px rgba(51,51,51,1);
+     box-shadow: 5px 0px 7px 0px rgba(51,51,51,1);
 }
 
 
@@ -143,10 +171,15 @@
 #single_ticket{
 	padding-bottom: 5%;
 	padding-top: 0%;
+
+
+
 }
 #icons{
 	text-align: right;
+	color:#000;
 }
+
 #description_heading{
 
 	width: 100%;
@@ -161,7 +194,7 @@
 	text-align: center;
 
 	background: transparent;
-	color: #2196F3;
+	color: #000;
 }
 #description_content{
 	font-family:Bitter-Regular;
@@ -171,6 +204,16 @@
 	opacity: 60%;
 	color: #fff;
 	text-align: justify;
+
+
+
+}
+
+#description-text{
+	height:100px;
+	min-height: 100%;
+	max-height: 100%;
+
 }
 #podcast_image{
 
@@ -178,12 +221,19 @@
 	margin-left: 20%;
 	background: transparent;
 	border:3px outset #fff;
+	height: auto;
+
 
 }
 
 /*------------------PROFILE--------------------*/
 #profile_panel{
-	background: rgba(33,150,243,0.3);
+	/*-webkit-box-shadow: 3px 4px 15px 0px rgba(51,39,13,1);
+    -moz-box-shadow: 3px 4px 15px 0px rgba(51,39,13,1);
+     box-shadow: 3px 4px 15px 0px rgba(51,39,13,1);
+*/
+background: transparent;
+    /*background: rgba(0,0,0,0.6);*/
 
 
 }
@@ -194,15 +244,19 @@
 	letter-spacing: 1px;
 	background: transparent;
 	opacity: 60%;
-	color:#ffcc00;
+	color:#000;
 	text-align: center;
+	text-shadow: rgba(0,0,0,.2) 3px 4px 2px;
 
 }
 #profile_image{
 	text-align: center;
 	width: 10%;
 	height:10%;
-	border: 3px solid #ffcc00;
+	border: 3px solid #000;
+	-webkit-box-shadow: 3px 4px 15px 0px rgba(51,39,13,1);
+    -moz-box-shadow: 3px 4px 15px 0px rgba(51,39,13,1);
+     box-shadow: 3px 4px 15px 0px rgba(51,39,13,1);
 }
 
 /*------------------LOG IN--------------------*/
