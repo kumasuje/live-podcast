@@ -38,7 +38,6 @@
   		<div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="discover.html" id="menu_bar_items">Discover&emsp;</a></li>
-          <li><a href="live.html" id="menu_bar_items">Live&emsp;</a></li>
           <li><a href="profile.html" id="menu_bar_items">Profile&emsp;</a></li>
           <li><a href="about_us.html" id="menu_bar_items">About&emsp;</a></li>
           <li><a href="feedback.html" id="menu_bar_items">Feedback&emsp;</a></li>
@@ -62,7 +61,7 @@
 <div id ="content_of_page" class="container-fluid" >
 
   <!-- start:content -->
-            <p> ${podcastDeatils} </p>
+
   <div class= "panel-group">
      <div class= "row">
     	<c:forEach items="${podcastDeatils}" var="podcast">

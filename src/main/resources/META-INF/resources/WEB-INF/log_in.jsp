@@ -38,7 +38,6 @@
   		<div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="discover.html" id="menu_bar_items">Discover&emsp;</a></li>
-          <li><a href="live.html" id="menu_bar_items">Live&emsp;</a></li>
           <li><a href="profile.html" id="menu_bar_items">Profile&emsp;</a></li>
           <li><a href="about_us.html" id="menu_bar_items">About&emsp;</a></li>
           <li><a href="feedback.html" id="menu_bar_items">Feedback&emsp;</a></li>
@@ -128,6 +127,8 @@
                         <input type="file" name="file" class="form-control" id="file" required="true">
                      </div>
 
+
+
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
                      		<button type="submit" name="register" value="register" id="register" class="btn btn-primary">  Sign Up </button>
@@ -143,9 +144,8 @@
 
 
 
-  <footer>
-  <hr>
-    References: <a href="https://www.indiana.edu/">Indiana University Website</a>
+<footer id="footer_page" class="footer navbar-fixed-bottom">
+ References: <a href="https://www.indiana.edu/">Indiana University Website</a>
   </footer>
 
 
