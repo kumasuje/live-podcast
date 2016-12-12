@@ -38,24 +38,23 @@
   		<div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="discover.html" id="menu_bar_items">Discover&emsp;</a></li>
-          <li><a href="profile.html" id="menu_bar_items">Profile&emsp;</a></li>
-          <li><a href="about_us.html" id="menu_bar_items">About&emsp;</a></li>
-          <li><a href="feedback.html" id="menu_bar_items">Feedback&emsp;</a></li>
+          <li><a href="profile.html" id="menu_bar_items1">Profile&emsp;</a></li>
+          <li><a href="about_us.html" id="menu_bar_items2">About&emsp;</a></li>
+          <li><a href="feedback.html" id="menu_bar_items3">Feedback&emsp;</a></li>
          <li><a href="log_in.html" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
 
             "${user}"
             <c:if test="${empty user}">
-               <li><a href="log_in.html" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+               <li><a href="log_in.html" id="menu_bar_items_log_in1"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
             </c:if>
             <c:if test="${not empty user}">
-               <li><a href="/logout" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+               <li><a href="/logout" id="menu_bar_items_log_in2"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
             </c:if>
         </ul>
         </div>
     </div>
 </nav>
 <!--end:navbar-->
-  
 
 <!-- start of div:container the scrolling part -->
 <div id ="content_of_page" class="container-fluid" >

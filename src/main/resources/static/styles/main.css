@@ -66,6 +66,97 @@ a:hover{
 
 }
 
+<!-- -->
+
+#menu_bar_items1{
+	/*works for menu bar*/
+	font-family:Bitter-Regular;
+	color: #fff;
+	background-color: #000;
+
+}
+#menu_bar_items1:hover{
+	/*works for menu bar*/
+	font-family:Bitter-Regular;
+	color: #FFB886;
+	background-color: #000;
+
+}
+#menu_bar_items1_log_in{
+	font-family:Bitter-Regular;
+	/*color: #ffcc00;	*/
+	color:#fff;
+	background-color: #000;
+
+}
+#menu_bar_items1_log_in:hover{
+	font-family:Bitter-Regular;
+	color: #FFB886;
+	background-color: #000;
+
+}
+
+<!-- -->
+
+#menu_bar_items2{
+	/*works for menu bar*/
+	font-family:Bitter-Regular;
+	color: #fff;
+	background-color: #000;
+
+}
+#menu_bar_items2:hover{
+	/*works for menu bar*/
+	font-family:Bitter-Regular;
+	color: #FFB886;
+	background-color: #000;
+
+}
+#menu_bar_items2_log_in{
+	font-family:Bitter-Regular;
+	/*color: #ffcc00;	*/
+	color:#fff;
+	background-color: #000;
+
+}
+#menu_bar_items2_log_in:hover{
+	font-family:Bitter-Regular;
+	color: #FFB886;
+	background-color: #000;
+
+}
+
+
+<!-- -->
+
+#menu_bar_items3{
+	/*works for menu bar*/
+	font-family:Bitter-Regular;
+	color: #fff;
+	background-color: #000;
+
+}
+#menu_bar_items3:hover{
+	/*works for menu bar*/
+	font-family:Bitter-Regular;
+	color: #FFB886;
+	background-color: #000;
+
+}
+#menu_bar_items3_log_in{
+	font-family:Bitter-Regular;
+	/*color: #ffcc00;	*/
+	color:#fff;
+	background-color: #000;
+
+}
+#menu_bar_items3_log_in:hover{
+	font-family:Bitter-Regular;
+	color: #FFB886;
+	background-color: #000;
+
+}
+
 #header{
 	background: #000;
 	height: 10%;
@@ -90,7 +181,7 @@ a:hover{
 
 #content_of_page{
 	position: relative;
-	margin-top: 9%;
+	margin-top: 95px;
 	z-index: 0;
 
 }

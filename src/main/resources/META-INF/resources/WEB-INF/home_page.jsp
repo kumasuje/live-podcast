@@ -32,30 +32,28 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a href="home_page.html" class="navbar-brand"><img id="logo" src="images/logo_title.png" target="_blank/" alt="Logo"/></a>
+        <a href="home_page.html" class="navbar-brand"><img id="logo" src="images/logo_title.png" alt="Logo"/></a>
   	</div>
 
   		<div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="discover.html" id="menu_bar_items">Discover&emsp;</a></li>
-          <li><a href="profile.html" id="menu_bar_items">Profile&emsp;</a></li>
-          <li><a href="about_us.html" id="menu_bar_items">About&emsp;</a></li>
-          <li><a href="feedback.html" id="menu_bar_items">Feedback&emsp;</a></li>
+          <li><a href="profile.html" id="menu_bar_items1">Profile&emsp;</a></li>
+          <li><a href="about_us.html" id="menu_bar_items2">About&emsp;</a></li>
+          <li><a href="feedback.html" id="menu_bar_items3">Feedback&emsp;</a></li>
          <li><a href="log_in.html" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
 
-            "${user}"
             <c:if test="${empty user}">
-               <li><a href="log_in.html" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+               <li><a href="log_in.html" id="menu_bar_items_log_in1"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
             </c:if>
             <c:if test="${not empty user}">
-               <li><a href="/logout" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+               <li><a href="/logout" id="menu_bar_items_log_in2"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
             </c:if>
         </ul>
         </div>
     </div>
 </nav>
 <!--end:navbar-->
-
 
 <!-- start of div:container the scrolling part -->
 <div id ="content_of_page" class="container-fluid" >
@@ -81,51 +79,52 @@
 
 
             <figure class="item active text-center">
-            <a href="#" target="_blank">
+                 <a href="#" target="_blank">
                 <img src="images/activities_main.jpg" id="slider_images" alt="Activities Podcast"/>
-                <figcaption id="slider_images_tag">Activities</figcaption>
-            </a>
+
+                </a>
+                 <figcaption id="slider_images_tag">Activities</figcaption>
             </figure>
 
 
             <figure class="item text-center">
-            <a href="#">
+
                 <img src="images/cheerleaders_main.jpg" id="slider_images" alt="Join different groups podcast"/>
                 <figcaption id="slider_images_tag">University groups</figcaption>
-            </a>
+
             </figure>
 
 
             <figure class="item text-center">
-            <a href="#">
+
                 <img src="images/friends_main.jpg" id="slider_images" alt="Type of crowd podcast"/>
                 <figcaption id="slider_images_tag">Academia</figcaption>
-            </a>
+
             </figure>
 
 
 
             <figure class="item text-center">
-            <a href="#">
+
                 <img src="images/library_main.jpg" id="slider_images" alt="Study resources podcast"/>
                 <figcaption id="slider_images_tag">Libraries</figcaption>
-            </a>
+
             </figure>
 
 
             <figure class="item text-center">
-            <a href="#">
+
                 <img src="images/health_main.jpg" id="slider_images" alt="Healthcare podcast"/>
                 <figcaption id="slider_images_tag">Healthcare</figcaption>
-                </a>
+
             </figure>
 
 
            <figure class="item text-center">
-            <a href="#">
+
                 <img src="images/map_main.jpg" id="slider_images" alt="Getting around podcast"/>
                 <figcaption id="slider_images_tag">Getting around</figcaption>
-            </a>
+
             </figure>
 
 
