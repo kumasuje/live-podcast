@@ -31,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a href="home_page.html" class="navbar-brand"><img id="logo" src="images/logo_title.png" target="_blank/" alt="Logo"/></a>
+        <a href="home_page.html" class="navbar-brand"><img id="logo" src="images/logo_title.png" alt="Logo"/></a>
   	</div>
 
   		<div class="collapse navbar-collapse" id="myNavbar">
@@ -42,7 +42,6 @@
           <li><a href="feedback.html" id="menu_bar_items3">Feedback&emsp;</a></li>
          <li><a href="log_in.html" id="menu_bar_items_log_in"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
 
-            "${user}"
             <c:if test="${empty user}">
                <li><a href="log_in.html" id="menu_bar_items_log_in1"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
             </c:if>
