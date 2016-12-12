@@ -62,14 +62,16 @@
   <!-- start:content -->
 
   <div class= "panel-group">
-     <div class= "row">
+
     	<c:forEach items="${podcastDeatils}" var="podcast">
 
-    	    <div id="single_ticket" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    	<div class= "row">
+            <div class="col-xs-0 col-sm-0 col-md-3 col-lg-3"></div>
+    	        <div id="single_ticket" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
                     <div id="overview" class="panel panel-default">
                         <div id="description_heading" class="panel-heading">${podcast.podcastName}</div>
-                             <div id="description_content" class="panel-body">
+                                <div id="description_content" class="panel-body">
 
                                   <img id="podcast_image" src="${podcast.imgLink}" href="#" alt="${podcast.podcastName}"/>
 
@@ -84,10 +86,11 @@
                                 </div>
                         </div>
                     </div>
-            </div>
-
+                </div>
+            <div class="col-xs-0 col-sm-0 col-md-3 col-lg-3"></div>
+        </div>
     	</c:forEach>
-     </div>
+
   </div>
   <!-- end: content -->
 

@@ -80,50 +80,50 @@
 
             <figure class="item active text-center">
                  <a href="#" target="_blank">
-                <img src="images/activities_main.jpg" id="slider_images" alt="Activities Podcast"/>
+                <img src="images/activities_main.jpg" alt="Activities Podcast"/>
 
                 </a>
-                 <figcaption id="slider_images_tag">Activities</figcaption>
+                 <figcaption class="slider_images_tag">Activities</figcaption>
             </figure>
 
 
             <figure class="item text-center">
 
-                <img src="images/cheerleaders_main.jpg" id="slider_images" alt="Join different groups podcast"/>
-                <figcaption id="slider_images_tag">University groups</figcaption>
-
-            </figure>
-
-
-            <figure class="item text-center">
-
-                <img src="images/friends_main.jpg" id="slider_images" alt="Type of crowd podcast"/>
-                <figcaption id="slider_images_tag">Academia</figcaption>
-
-            </figure>
-
-
-
-            <figure class="item text-center">
-
-                <img src="images/library_main.jpg" id="slider_images" alt="Study resources podcast"/>
-                <figcaption id="slider_images_tag">Libraries</figcaption>
+                <img src="images/cheerleaders_main.jpg" alt="Join different groups podcast"/>
+                <figcaption class="slider_images_tag">University groups</figcaption>
 
             </figure>
 
 
             <figure class="item text-center">
 
-                <img src="images/health_main.jpg" id="slider_images" alt="Healthcare podcast"/>
-                <figcaption id="slider_images_tag">Healthcare</figcaption>
+                <img src="images/friends_main.jpg" alt="Type of crowd podcast"/>
+                <figcaption class="slider_images_tag">Academia</figcaption>
+
+            </figure>
+
+
+
+            <figure class="item text-center">
+
+                <img src="images/library_main.jpg" alt="Study resources podcast"/>
+                <figcaption class="slider_images_tag">Libraries</figcaption>
+
+            </figure>
+
+
+            <figure class="item text-center">
+
+                <img src="images/health_main.jpg" alt="Healthcare podcast"/>
+                <figcaption class="slider_images_tag">Healthcare</figcaption>
 
             </figure>
 
 
            <figure class="item text-center">
 
-                <img src="images/map_main.jpg" id="slider_images" alt="Getting around podcast"/>
-                <figcaption id="slider_images_tag">Getting around</figcaption>
+                <img src="images/map_main.jpg" alt="Getting around podcast"/>
+                <figcaption class="slider_images_tag">Getting around</figcaption>
 
             </figure>
 
